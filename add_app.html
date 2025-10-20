@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Application</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myScripts.js"></script>
+</head>
+<body>
+<header><h1>Add Application</h1></header>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="apps.html">Applications</a>
+</nav>
+<section>
+  <form id="newAppForm">
+    <label>App Name:</label>
+    <input type="text" id="appName" pattern="[A-Za-z]+" required>
+    <label>Company:</label>
+    <input type="text" id="company" pattern="[A-Za-z ]+" required>
+    <label>Website:</label>
+    <input type="url" id="website" required>
+    <label>Free/Paid:</label>
+    <select id="price">
+      <option value="Free">Free</option>
+      <option value="Paid">Paid</option>
+    </select>
+    <label>Domain:</label>
+    <select id="domain">
+      <option>Robotics</option>
+      <option>Education</option>
+      <option>E-Commerce</option>
+    </select>
+    <label>Description:</label>
+    <textarea id="description"></textarea>
+    <label>Logo:</label>
+    <input type="file" id="logo" accept="image/*">
+    <label>Audio:</label>
+    <input type="file" id="audio" accept="audio/*">
+    <label>Video:</label>
+    <input type="file" id="video" accept="video/*">
+    <button type="submit">Add</button>
+    <button type="reset">Reset</button>
+  </form>
+</section>
+</body>
+</html>
